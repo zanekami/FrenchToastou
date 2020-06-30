@@ -18,8 +18,6 @@ public class Student {
 	 
 	 public void setPartTimeJob(PartTimeJob jb) {
 		 this.m_job=jb;
-		
-		 
 	 }
 	 public void working() {
 		 this.m_currentTotal+=m_job.getDailyWages();
