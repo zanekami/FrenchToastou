@@ -12,8 +12,7 @@ public class Student {
 			this.m_goal=300000;
 			this.m_numDays=4;
 			this.m_currentTotal=0;
-			this.current_expense=0;
-		 
+			this.current_expense=0;	 
 	 }
 	 
 	 public void setPartTimeJob(PartTimeJob jb) {
