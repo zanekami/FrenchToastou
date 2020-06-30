@@ -30,7 +30,6 @@ public class Student {
 	 }
 	 public int getCurrentTotal() {
 		 return this.m_currentTotal;
- 
 		
 	 }
 	 public boolean isAchieved() {
