@@ -13,9 +13,10 @@ public class Main {
 		boolean isChanged=false;
 		
 		for(int i=0;i<100;i++) {
-			System.out.println("働いた日数"+workedDays+":現在の貯金額:" +s.getCurrentTotal());
 			s.working();
 			workedDays= i+1;
+			System.out.println("働いた日数"+workedDays+":現在の貯金額:" +s.getCurrentTotal());
+			System.out.println("貯金額に含まれる交通費:"+s.transpotation());
 			if(s.isAchieved()==true)
 				break;
 			if(s.getDays()==i+1) {
