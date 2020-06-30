@@ -34,7 +34,5 @@ public class Main {
 		}else {
 			System.out.println("最終的な貯金額:"+s.getCurrentTotal()+"JPY");
 		}
-
 	}
-
 }
