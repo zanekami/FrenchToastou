@@ -27,9 +27,12 @@ public class Main {
 				
 		}
 		System.out.println("目標金額までにかかった日数:"+workedDays);
-		System.out.println("最終的な貯金額:"+s.getCurrentTotal()+"JPY");
-		
-
+		if(s.getCurrentTotal()>=200000) {
+			System.out.println("私、トリー・バーチの鞄買うね！");
+			int balance=s.getCurrentTotal()-200000;
+			System.out.println("最終的な貯金額:"+balance+"JPY");
+		}else {
+			System.out.println("最終的な貯金額:"+s.getCurrentTotal()+"JPY");
+		}
 	}
-
 }
