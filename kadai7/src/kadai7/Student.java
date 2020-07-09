@@ -6,6 +6,8 @@ public class Student {
 	private int m_currentTotal;
 	private int current_expense;
 	private PartTimeJob m_job;
+   private  int workeddays;
+   
 	
 	 public Student(PartTimeJob jb) {
 			this.m_job=jb;
@@ -13,6 +15,7 @@ public class Student {
 			this.m_numDays=4;
 			this.m_currentTotal=0;
 			this.current_expense=0;	 
+			this.workeddays=0;
 	 }
 	 
 	 public void setPartTimeJob(PartTimeJob jb) {
@@ -20,6 +23,9 @@ public class Student {
 	 }
 	 public void working() {
 		 this.m_currentTotal+=m_job.getDailyWages();
+		 this.workeddays+=1;
+		 
+			 
 	 }
 	 public int transpotation() {
 		 this.current_expense+=m_job.getExpense();
@@ -29,8 +35,11 @@ public class Student {
 		 return  this.m_numDays;
 	 }
 	 public int getCurrentTotal() {
+   if(workeddays%10==0) {
+	   return m_currentTotal+10000;
+   }else
 		 return this.m_currentTotal;
-		
+		 
 	 }
 	 public boolean isAchieved() {
 		 boolean achive =this.m_currentTotal>=this.m_goal;

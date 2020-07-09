@@ -6,4 +6,5 @@ public  interface PartTimeJob {
 		
 	 int getExpense();
 	
+	 //int getBonus();
 }
