@@ -4,7 +4,7 @@ package kadai7;
 	 
 	 private int m_wage;
 	 private int expense;
-	 private int bonus;
+	 //private int bonus;
 		PartTimeJobB(){
 			 this.m_wage=8000;
 			 this.expense=300;

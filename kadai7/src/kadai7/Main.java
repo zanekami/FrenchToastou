@@ -8,16 +8,20 @@ public class Main {
 		PartTimeJobB jobB=new PartTimeJobB();
 		Student s=new Student(jobA);
 		
-		
 		int workedDays=0;
 		boolean isChanged=false;
 		
+		System.out.println("最終的な目標金額は"+s.getGoal()+"円です。");//ここのエラーはなんで
+		
 		for(int i=0;i<100;i++) {
-			s.working();
 			workedDays= i+1;
+			if(workedDays%14==0) {
+				System.out.println("二週間経ったから今日は休もう!明日からまた頑張るねおやすみなさい");
+			}else {
+			s.working();
+			}
 		
 			System.out.println("働いた日数"+workedDays+":現在の貯金額:" +s.getCurrentTotal());
-		
 			
 			System.out.println("貯金額に含まれる交通費:"+s.transpotation());
 			if(s.isAchieved()==true)
@@ -28,7 +32,6 @@ public class Main {
 					
 			}
 		}
-		
 					
 		System.out.println("目標金額までにかかった日数:"+workedDays);
 		if(s.getCurrentTotal()>=200000) {

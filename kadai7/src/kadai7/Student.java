@@ -17,6 +17,12 @@ public class Student {
 			this.current_expense=0;	 
 			this.workeddays=0;
 	 }
+	 /*public void setGoal(int money) {
+		 this.m_goal=money;
+	 }*/
+	 public int getGoal() {
+		 return this.m_goal;
+	 }
 	 
 	 public void setPartTimeJob(PartTimeJob jb) {
 		 this.m_job=jb;
