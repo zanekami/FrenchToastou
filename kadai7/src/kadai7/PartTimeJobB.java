@@ -17,9 +17,9 @@ package kadai7;
 			// TODO Auto-generated method stub
 			 return m_wage+expense;
 		}
-public int getExpense() {
-	return expense;
-}
+		public int getExpense() {
+			return expense;
+		}
 	//public int getBonus() {
 		//return bonus;
 	//}
